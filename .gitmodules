@@ -1,0 +1,3 @@
+[submodule "ipopt_install"]
+	path = ipopt_install
+	url = https://github.com/YaominJun/ipopt_install.git
