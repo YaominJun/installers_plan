@@ -32,6 +32,7 @@ CMakeLists.txt:24 (find_package)
 ``bash ./installers_plan/install_cppad.sh``</br>
 再安装ipopt：</br>
 ``bash ./ipopt_install/install_ipopt.bash``</br>
+
 如果编译执行时遇到：</br>
 /user/bin/ld: 找不到 -lgfortran </br>
 
@@ -45,7 +46,7 @@ CMakeLists.txt:24 (find_package)
 ### 4）benchmark
 Could not find a package configuration file provided by "benchmark" with
 any of the following names:</br>
-benchmarkConfig.cmake
+benchmarkConfig.cmake</br>
 benchmark-config.cmake
 
 解决办法：</br>
@@ -54,7 +55,7 @@ benchmark-config.cmake
 ### 5）rosparam handler
 Could not find a package configuration file provided by "rosparam_handler"
 with any of the following names:</br>
-rosparam_handlerConfig.cmake
+rosparam_handlerConfig.cmake</br>
 rosparam_handler-config.cmake
 
 解决办法：</br>
