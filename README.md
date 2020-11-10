@@ -148,7 +148,7 @@ or complied failed: </br>
 </td></tr></table>
 
 then:</br>
-``bash install_opencv2_4gcc6``
+``bash install_opencv2_4gcc6.sh``
 
 Reason: </br>
 The version of gcc is higher than the opencv2.4.13 requires.
@@ -167,7 +167,7 @@ Call Stack (most recent call first):</br>
 </td></tr></table>
 
 Solution:</br>
-``bash install_libccd_fcl``
+``bash install_libccd_fcl.sh``
 
 ### 13)grid_map_sdf
 <table><tr><td bgcolor=MintCream>
