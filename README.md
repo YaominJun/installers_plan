@@ -214,7 +214,9 @@ casadi-config.cmake</br>
 </td></tr></table>
 
 Solution:</br>
-
+``bash install_casadi.sh`` </br>
+[**Notice:<br>
+The casadi.tar.gz is too big to push on the github. If you want to use it, please ask me privately**]
 
 小细节：
 丢失了哪个包，可以去网上搜，如果是ROS_Wiki就有的，可以直接：
