@@ -190,7 +190,6 @@ Call Stack (most recent call first):</br>
 </td></tr></table>
 
 Solution:</br>
-[**Wait a minute, there's still some problem, I'll download a right version soon**]</br>
 ``bash install_googleProtobuf.sh`` </br>
 
 []()[reference for install](https://github.com/protocolbuffers/protobuf/blob/master/src/README.md);</br>
@@ -203,7 +202,19 @@ Solution:</br>
 </td></tr></table>
 
  Solution:</br>
- ``sudo apt-get install ros-kinetic-tf2-sensor-msgs``
+ ``sudo apt-get install ros-kinetic-tf2-sensor-msgs`` 
+ </br>
+
+### 16)casadi
+<table><tr><td bgcolor=MintCream>
+  Could not find a package configuration file provided by "casadi" with any
+  of the following names:</br>
+casadiConfig.cmake</br>
+casadi-config.cmake</br>
+</td></tr></table>
+
+Solution:</br>
+
 
 小细节：
 丢失了哪个包，可以去网上搜，如果是ROS_Wiki就有的，可以直接：
