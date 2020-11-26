@@ -1,5 +1,6 @@
 # installers_plan
 the dependencies install for the motion planning algorithm
+some tar.gz or .zip file is too big to push into github, please ask me privately to share with you.
 
 ## 1.编译
 ### 1）grid_map_core
