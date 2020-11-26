@@ -219,6 +219,21 @@ Solution:</br>
 [**Notice:<br>
 The casadi.tar.gz is too big to push on the github. If you want to use it, please ask me privately**]
 
+### 17)vrep
+（1）官网下载安装包：[]()[vrep官网，下载3.6版本即可]
+(https://www.coppeliarobotics.com/)
+运行脚本：
+
+    bash  install_vrep.sh
+注意将里面第八行 `VREP_DIR_DEFAULT="/home/luyaomin/0Disk/ros_dep/vrep" #the DIR that you download the VREP tar.xz file`换成自己的安装位置 </br>
+（2）vrep和ros的接口安装
+实验室 autoSim-ivrc 里的脚本 </br>
+（3）运行vrep，在调用实验室的模型的时候，如果有报错，调整：
+（注，vrep如果安装的是3_6而不是3_4的话，在执行./install_dependences.sh的时候会报错，此时会报错‘nullptr’ was not declared in this scope，直接进入错误提示里的v_repLib.cpp文件里，将 nullptr 替换为 NULL。（因为nullptr是新标准C++11里添加的，而这个autoSim-ivrc是基于旧版本的，所以无法对nullptr进行识别。）</br>
+修改v_repLib.cpp文件:
+![]()![](images/4ed6a757-efb0-45d8-ada5-5a4fc1b3d33b.png)
+
+
 小细节：
 丢失了哪个包，可以去网上搜，如果是ROS_Wiki就有的，可以直接：
 `sudo apt-get install ros-kinetic-pkgName` 尝试安装！！！
