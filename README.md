@@ -274,7 +274,11 @@ The casadi.tar.gz is too big to push on the github. If you want to use it, pleas
 []()[abs和fabs](https://blog.csdn.net/linwh8/article/details/50754147/)
 
 
-### 19) 
+### 19) guide_point 
+检查包名是否正确</br>
+
+至此，全部编译完成！！！</br>
+![]()![](images/2020-11-27%2023-15-33屏幕截图.png)
 
 小细节：
 丢失了哪个包，可以去网上搜，如果是ROS_Wiki就有的，可以直接：
