@@ -196,6 +196,24 @@ Solution:</br>
 []()[reference for install](https://github.com/protocolbuffers/protobuf/blob/master/src/README.md);</br>
 []()[reference about protobuf](https://github.com/protocolbuffers/protobuf)
 
+if report the error when you `catkin_build`: </br>
+<table><tr><td bgcolor=MintCream>
+fatal error: google/protobuf/stubs/stringprintf.h: 没有那个文件或目录
+</td></tr></table>
+
+Solution:</br>
+Find the QpSpeed package's CMakelist.txt, and add your install path into line 133, like this: </br>
+
+    include_directories(
+        include
+		/home/luyaomin/0Disk/ros_dep/protobuf/protobuf-3.13.0/src/
+        ${catkin_INCLUDE_DIRS}
+        ${Boost_INCLUDE_DIRS}
+		${EIGEN3_INCLUDE_DIR}
+		${PROTOBUF_INCLUDE_DIRS}
+		third_lib/qpOASES/include
+    )
+
 
 ### 15)tf2_sensor_msgs
 <table><tr><td bgcolor=MintCream>
@@ -243,6 +261,20 @@ The casadi.tar.gz is too big to push on the github. If you want to use it, pleas
     vrep
 之后运行才不会报错，否则会找不到对应的模型。
 
+
+### 18)state_sampling `abs` report error
+![]()![](images/2020-11-27%2022-58-25屏幕截图.png)
+将对应文件里的`abs`改为`fabs`：</br>
+
+    if ((path_length > 30 || path_length > ref_path.back().s * 3 / 4)
+            && std::fabs(i - center_id) < std::fabs(nearest_id - center_id)) {
+            nearest_id = i;
+        }
+原因：</br>
+[]()[abs和fabs](https://blog.csdn.net/linwh8/article/details/50754147/)
+
+
+### 19) 
 
 小细节：
 丢失了哪个包，可以去网上搜，如果是ROS_Wiki就有的，可以直接：
